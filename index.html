@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Downloader for Reddit Achievements</title>
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <form id="getImg">
+        <p><label for="user">Enter a Reddit username:</label><br>
+        <input id="user" name="user"></p>
+        <p><label for="trophy">Which achievement?</label><br>
+        <input id="trophy" name="trophy" list="trophies"></p>
+        <p><label for="lang">Language of image:</label><br>
+        <input id="lang" name="lang"></p>
+        <p><input type="checkbox" id="show" name="show" checked>
+        <label for="show">Show username and avatar</label></p>
+        <p><button type="submit">Get Image</button></p>
+    </form>
+    <datalist id="trophies">
+        <option value="support-network">Support Network</option>
+        <option value="400-day-streak">400-Day Streak</option>
+        <option value="banana-beginner">Banana Beginner</option>
+        <option value="16">20-Day Streak</option>
+        <option value="5">Profile Perfectionist</option>
+        <option value="monthly-top-25-commenter">Top 25% Commenter</option>
+        <option value="monthly-top-10-commenter">Top 10% Commenter</option>
+        <option value="picasso">Picasso</option>
+        <option value="post-explorer">Flag Planter</option>
+        <option value="avid-curator">Content Connoisseur</option>
+        <option value="frequent-contributor">Repeat Contributor</option>
+        <option value="monthly-top-25-poster">Top 25% Poster</option>
+        <option value="monthly-top-10-poster">Top 10% Poster</option>
+        <option value="monthly-top-5-poster">Top 5% Poster</option>
+        <option value="grass-toucher">Grass Toucher</option>
+        <option value="monthly-top-5-commenter">Top 5% Commenter</option>
+        <option value="monthly-top-1-commenter">Top 1% Commenter</option>
+        <option value="basement-dweller">Basement Dweller</option>
+        <option value="advisor-mod">Advisor Mod</option>
+        <option value="weekly-visitors-1M">1,000,000 Weekly Visitors</option>
+        <option value="mod-in-tights">Mod in Tights</option>
+        <option value="700-day-streak">700-Day Streak</option>
+        <option value="monthly-top-1-poster">Top 1% Poster</option>
+        <option value="mod-of-the-people">Mod of the People</option>
+        <option value="mod-awakening">Mod Awakening</option>
+        <option value="rising-star">Rising Star</option>
+        <option value="thats-me">That's Me</option>
+        <option value="mod-hatchling">Mod Hatchling</option>
+        <option value="weekly-visitors-100k">100,000 Weekly Visitors</option>
+        <option value="weekly-visitors-10k">10,000 Weekly Visitors</option>
+        <option value="weekly-visitors-1k">1,000 Weekly Visitors</option>
+        <option value="weekly-visitors-100">100 Weekly Visitors</option>
+        <option value="weekly-visitors-25">25 Weekly Visitors</option>
+        <option value="weekly-visitors-5">5 Weekly Visitors</option>
+        <option value="purrfect-pair">Purrfect Pair</option>
+        <option value="grand-sprouting">Grand Sprouting</option>
+        <option value="basecamp-bag">Basecamp Bag</option>
+        <option value="600-day-streak">600-Day Streak</option>
+        <option value="alumni-mod">Alumni Mod</option>
+        <option value="super-contributor">Super Contributor</option>
+        <option value="500-day-streak">500-Day Streak</option>
+        <option value="365-day-streak">365-Day Streak</option>
+        <option value="300-day-streak">300-Day Streak</option>
+        <option value="potassium-overlord">Potassium Overlord</option>
+        <option value="peak-post">Peak Post</option>
+        <option value="banana-legend">Banana Legend</option>
+        <option value="banana-master">Banana Master</option>
+        <option value="banana-aficionado">Banana Aficionado</option>
+        <option value="banana-baby">Banana Baby</option>
+        <option value="banana-enthusiast">Banana Enthusiast</option>
+        <option value="200-day-streak">200-Day Streak</option>
+        <option value="premiere-post">Premiere Post</option>
+        <option value="popular-post">Popular Post</option>
+        <option value="sharing-legend">Sharing Legend</option>
+        <option value="sharing-pro">Sharing Pro</option>
+        <option value="sharing-advocate">Sharing Advocate</option>
+        <option value="sharing-enthusiast">Sharing Enthusiast</option>
+        <option value="buzz-worthy-post">Buzz-Worthy Post</option>
+        <option value="150-day-streak">150-Day Streak</option>
+        <option value="captivating-comment">Captivating Comment</option>
+        <option value="quality-comment">Quality Comment</option>
+        <option value="100-day-streak">100-Day Streak</option>
+        <option value="75-day-streak">75-Day Streak</option>
+        <option value="19">50-Day Streak</option>
+        <option value="18">40-Day Streak</option>
+        <option value="17">30-Day Streak</option>
+        <option value="4">Person of Interests</option>
+        <option value="11">Conversation Starter</option>
+        <option value="12">Nice Post</option>
+        <option value="10">New Share</option>
+        <option value="15">10-Day Streak</option>
+        <option value="7">Detective Doggo</option>
+        <option value="9">Hometown Hero</option>
+        <option value="14">5-Day Streak</option>
+        <option value="3">Newcomer</option>
+        <option value="13">Cool Comment</option>
+        <option value="6">Feed Finder</option>
+        <option value="2">Secured Account</option>
+        <option value="elder">Elder</option>
+        <option value="1">Joined Reddit</option>
+    </datalist>
+</body>
+</html>

@@ -1,1 +1,1 @@
-# Blue-
+# Image Downloader for Reddit Achievements
