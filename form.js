@@ -49,6 +49,17 @@ const getImg = () => {
         );
     })
     .then((blob) => {
+        const file = new File([blob], `${i.trophy.value}.jpeg`, {type: 'image/jpeg'});
+        const filesArray = [file];
+        // I'm trying this, apparently the title can be ignored by the target?
+        // source: https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share
+        if (navigator.canShare && navigator.canShare({ files: filesArray })) {
+            navigator.share({
+                text: i.user.value,
+                files: filesArray,
+                title: i.trophy.label
+            });
+        }
         src = URL.createObjectURL(blob);
         earned.classList.remove("hidden");
         earned.addEventListener("load", URL.revokeObjectURL.bind(src), {
