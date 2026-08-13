@@ -108,94 +108,73 @@
             </optgroup>
         </select></p>
         <p><label for="lang">Language of image (not always supported):</label><br>
-        <input id="lang" name="lang" list="langs"></p>
+        <select id="lang" name="lang">
+            <!-- These are copied from scratch.mit.edu directly.
+            If "Joined Reddit" isn't translated, it is removed. -->
+            <option value="ab">Аҧсшәа</option>
+            <option value="af">Afrikaans</option>
+            <option value="ar">العربية</option>
+            <option value="az">Azeri</option>
+            <option value="id">Bahasa Indonesia</option>
+            <option value="bn">বাংলা</option>
+            <option value="be">Беларуская</option>
+            <option value="bg">Български</option>
+            <option value="cs">Česky</option>
+            <option value="da">Dansk</option>
+            <option value="de">Deutsch</option>
+            <option value="et">Eesti</option>
+            <option value="el">Ελληνικά</option>
+            <option value="en" selected>English</option>
+            <option value="es">Español (España)</option>
+            <option value="es-419">Español Latinoamericano</option>
+            <option value="eu">Euskara</option>
+            <option value="fa">فارسی</option>
+            <option value="fil">Filipino</option>
+            <option value="fr">Français</option>
+            <option value="fy">Frysk</option>
+            <option value="gl">Galego</option>
+            <option value="ko">한국어</option>
+            <option value="hy">Հայերեն</option>
+            <option value="he">עִבְרִית</option>
+            <option value="hi">हिंदी</option>
+            <option value="hr">Hrvatski</option>
+            <option value="it">Italiano</option>
+            <option value="kk">қазақша</option>
+            <option value="qu">Kichwa</option>
+            <option value="ht">Kreyòl ayisyen</option>
+            <option value="ku">Kurdî</option>
+            <option value="ckb">کوردیی ناوەندی</option>
+            <option value="hu">Magyar</option>
+            <option value="mn">Монгол хэл</option>
+            <option value="nl">Nederlands</option>
+            <option value="ja">日本語</option>
+            <!-- only the bottom text is translated for ja-Hira -->
+            <option value="ja-Hira">にほんご</option>
+            <option value="nb">Norsk Bokmål</option>
+            <option value="nn">Norsk Nynorsk</option>
+            <option value="oc">Occitan</option>
+            <option value="uz">Oʻzbekcha</option>
+            <option value="th">ไทย</option>
+            <option value="pl">Polski</option>
+            <option value="pt">Português</option>
+            <option value="pt-BR">Português Brasileiro</option>
+            <option value="ro">Română</option>
+            <option value="ru">Русский</option>
+            <option value="tn">Setswana</option>
+            <option value="sk">Slovenčina</option>
+            <option value="sr">Српски</option>
+            <option value="fi">Suomi</option>
+            <option value="sv">Svenska</option>
+            <option value="vi">Tiếng Việt</option>
+            <option value="tr">Türkçe</option>
+            <option value="uk">Українська</option>
+            <option value="zh-CN">简体中文</option>
+            <option value="zh-TW">繁體中文</option>
+        </select></p>
         <p><input type="checkbox" id="show" name="show" checked>
         <label for="show">Show username and avatar</label></p>
         <p><button type="submit">Get Image</button></p>
     </form>
     <img src="" alt="Image of achievement" class="hidden" id="earned">
-    <datalist id="langs">
-        <!-- These are copied from scratch.mit.edu directly -->
-        <option value="ab">Аҧсшәа</option>
-        <option value="af">Afrikaans</option>
-        <option value="ar">العربية</option>
-        <option value="am">አማርኛ</option>
-        <option value="an">Aragonés</option>
-        <option value="ast">Asturianu</option>
-        <option value="az">Azeri</option>
-        <option value="id">Bahasa Indonesia</option>
-        <option value="bn">বাংলা</option>
-        <option value="be">Беларуская</option>
-        <option value="bg">Български</option>
-        <option value="ca">Català</option>
-        <option value="cs">Česky</option>
-        <option value="cy">Cymraeg</option>
-        <option value="da">Dansk</option>
-        <option value="de">Deutsch</option>
-        <option value="et">Eesti</option>
-        <option value="el">Ελληνικά</option>
-        <option value="en">English</option>
-        <option value="es">Español (España)</option>
-        <option value="es-419">Español Latinoamericano</option>
-        <option value="eo">Esperanto</option>
-        <option value="eu">Euskara</option>
-        <option value="fa">فارسی</option>
-        <option value="fil">Filipino</option>
-        <option value="fr">Français</option>
-        <option value="fy">Frysk</option>
-        <option value="ga">Gaeilge</option>
-        <option value="gd">Gàidhlig</option>
-        <option value="gl">Galego</option>
-        <option value="ko">한국어</option>
-        <option value="ha">Hausa</option>
-        <option value="hy">Հայերեն</option>
-        <option value="he">עִבְרִית</option>
-        <option value="hi">हिंदी</option>
-        <option value="hr">Hrvatski</option>
-        <option value="xh">isiXhosa</option>
-        <option value="zu">isiZulu</option>
-        <option value="is">Íslenska</option>
-        <option value="it">Italiano</option>
-        <option value="ka">ქართული ენა</option>
-        <option value="kk">қазақша</option>
-        <option value="qu">Kichwa</option>
-        <option value="sw">Kiswahili</option>
-        <option value="ht">Kreyòl ayisyen</option>
-        <option value="ku">Kurdî</option>
-        <option value="ckb">کوردیی ناوەندی</option>
-        <option value="lv">Latviešu</option>
-        <option value="lt">Lietuvių</option>
-        <option value="hu">Magyar</option>
-        <option value="mi">Māori</option>
-        <option value="mn">Монгол хэл</option>
-        <option value="nl">Nederlands</option>
-        <option value="ja">日本語</option>
-        <option value="ja-Hira">にほんご</option>
-        <option value="nb">Norsk Bokmål</option>
-        <option value="nn">Norsk Nynorsk</option>
-        <option value="oc">Occitan</option>
-        <option value="or">ଓଡ଼ିଆ</option>
-        <option value="uz">Oʻzbekcha</option>
-        <option value="th">ไทย</option>
-        <option value="km">ភាសាខ្មែរ</option>
-        <option value="pl">Polski</option>
-        <option value="pt">Português</option>
-        <option value="pt-BR">Português Brasileiro</option>
-        <option value="rap">Rapa Nui</option>
-        <option value="ro">Română</option>
-        <option value="ru">Русский</option>
-        <option value="nso">Sepedi</option>
-        <option value="tn">Setswana</option>
-        <option value="sk">Slovenčina</option>
-        <option value="sl">Slovenščina</option>
-        <option value="sr">Српски</option>
-        <option value="fi">Suomi</option>
-        <option value="sv">Svenska</option>
-        <option value="vi">Tiếng Việt</option>
-        <option value="tr">Türkçe</option>
-        <option value="uk">Українська</option>
-        <option value="zh-CN">简体中文</option>
-        <option value="zh-TW">繁體中文</option>
-    </datalist>
 </body>
 </html>

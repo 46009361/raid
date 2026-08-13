@@ -1,10 +1,21 @@
 "use strict";
 const imgForm = document.querySelector("#imgForm");
-imgForm.lang.placeholder = navigator.languages;
+const lang = imgForm.lang;
+const options = [...lang.options].map(option => option.value);
+for (const language of navigator.languages) {
+    if (options.includes(language)) {
+        lang.value = language;
+        break;
+    }
+    const langCode = language.match(/([a-z]{2,3})/)[1];
+    if (options.includes(langCode)) {
+        lang.value = langCode;
+        break;
+    }
+}
 const getImg = () => {
     event.preventDefault();
     const i = imgForm;
-    const lang = i.lang;
     const req = new Request(
         `https://corsproxy.io/?${
             new URLSearchParams({
@@ -21,21 +32,32 @@ const getImg = () => {
         {
             method: "GET",
             headers: {
-                "Accept-Language": lang.value || lang.placeholder
+                "Accept-Language": lang.value
             }
         }
     );
     let src;
+    const earned = document.querySelector("#earned");
+    earned.classList.add("hidden");
     fetch(req)
-    .then((res) => res.blob())
+    .then((res) => {
+        if (res.ok) {
+            return res.blob();
+        }
+        throw new Error(
+            "Either you're offline or this person doesn't exist or have that achievement."
+        );
+    })
     .then((blob) => {
         src = URL.createObjectURL(blob);
-        const earned = document.querySelector("#earned");
         earned.classList.remove("hidden");
         earned.addEventListener("load", URL.revokeObjectURL.bind(src), {
             once: true
         });
         earned.src = src;
+    })
+    .catch((err) => {
+        alert(err.message);
     });
 }
 imgForm.addEventListener("submit", getImg);
