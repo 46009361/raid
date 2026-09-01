@@ -1,6 +1,6 @@
 # Image Downloader for Reddit Achievements
 
-On the mobile app for Reddit, when your account earns an achievement, Reddit generates an image for you to download and/or share. As of writing this, the URL for this image is [only documented in one place](https://www.google.com/search?q=%22show-user-info%3Dtrue%22&udm=14), as `https://share.redd.it/preview/user/<the-usename-here>/achievement/10?show-user-info=true` (source: [HackerOne report](https://hackerone.com/reports/2618486#:~:text=https%3A//share.redd.it/preview/user/%3Cthe%2Dusename%2Dhere%3E/achievement/10%3Fshow%2Duser%2Dinfo%3Dtrue)). For certain types of achievements, this can show you the unlock number of anyone else's achievement.
+On the mobile app for Reddit, when your account earns an achievement, Reddit generates an image for you to download and/or share. As of writing this, the URL for this image is [only documented in one place](https://www.google.com/search?q=%22show-user-info%3Dtrue%22&udm=14), as `https://share.redd.it/preview/user/<the-usename-here>/achievement/10?show-user-info=true` (source: [HackerOne report](https://hackerone.com/reports/2618486#:~:text=https%3A//share.redd.it/preview/user/%3Cthe%2Dusename%2Dhere%3E/achievement/10%3Fshow%2Duser%2Dinfo%3Dtrue)).
 
 > [!NOTE]
 > 
