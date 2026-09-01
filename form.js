@@ -25,12 +25,11 @@ const getImg = () => {
                     i.show.checked ? "?show-user-info=true" : ""
                 }`
             )
-        }`,
+        }&cb=${Math.floor(Math.random()*1e6)}`,
         {
             method: "GET",
             headers: {
                 "Accept-Language": lang.value,
-                "x-corsfix-cache": "1d",
                 "x-corsfix-headers": JSON.stringify({
                     "User-Agent": "web:4600936.uno:v2.0 (by /u/46009361) contact {{EMAIL}}"
                 })
