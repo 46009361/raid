@@ -35,4 +35,5 @@ And yes, I'm aware that the name "raid" doesn't fit the intended tone of the pro
 * [Scratch](https://scratch.mit.edu/) for the language list, with the capitalization of the country codes modified to meet the requirements of the browser header.
    * I had to remove many languages that fell back to English, as it wouldn't make sense to include them if they don't work on this project.
 * The [r/Redditachievments wiki](https://www.reddit.com/r/Redditachievments/wiki/records/) for providing me with a list of accounts having the most achievements for me to test on. Without them, this project wouldn't be possible!
+* [Corsfix](https://corsfix.com/docs) for the documentation
 * At least one more source that I probably forgot when it came to writing the remaining parts of the code that I didn't already know

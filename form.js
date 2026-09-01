@@ -17,22 +17,23 @@ const getImg = () => {
     event.preventDefault();
     const i = imgForm;
     const req = new Request(
-        `https://corsproxy.io/?${
-            new URLSearchParams({
-                "url": `https://share.redd.it/preview/user/${
+        `https://proxy.corsfix.com/?${
+            encodeURI(
+                `https://share.redd.it/preview/user/${
                     i.user.value
                 }/achievement/${i.trophy.value}${
                     i.show.checked ? "?show-user-info=true" : ""
-                }`,
-                "key": 46009361,
-                // cache busting
-                "cb": Math.floor(Math.random()*1e6)
-            })
+                }`
+            )
         }`,
         {
             method: "GET",
             headers: {
-                "Accept-Language": lang.value
+                "Accept-Language": lang.value,
+                "x-corsfix-cache": "1d",
+                "x-corsfix-headers": JSON.stringify({
+                    "User-Agent": "web:4600936.uno:v2.0 (by /u/46009361) contact {{EMAIL}}"
+                })
             }
         }
     );
