@@ -17,22 +17,15 @@ const getImg = () => {
     event.preventDefault();
     const i = imgForm;
     const req = new Request(
-        `https://proxy.corsfix.com/?${
-            encodeURI(
-                `https://share.redd.it/preview/user/${
-                    i.user.value
-                }/achievement/${i.trophy.value}${
-                    i.show.checked ? "?show-user-info=true" : ""
-                }`
-            )
+        `https://clerk.hackclub.app/preview/user/${
+            i.user.value
+        }/achievement/${i.trophy.value}${
+            i.show.checked ? "?show-user-info=true" : ""
         }&cb=${Math.floor(Math.random()*1e6)}`,
         {
             method: "GET",
             headers: {
-                "Accept-Language": lang.value,
-                "x-corsfix-headers": JSON.stringify({
-                    "User-Agent": "web:4600936.uno:v2.0 (by /u/46009361) contact {{EMAIL}}"
-                })
+                "Accept-Language": lang.value
             }
         }
     );
