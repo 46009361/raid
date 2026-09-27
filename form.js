@@ -17,7 +17,7 @@ const getImg = () => {
     event.preventDefault();
     const i = imgForm;
     const req = new Request(
-        `https://clerk.hackclub.app/preview/user/${
+        `https://46009361.page/preview/user/${
             i.user.value
         }/achievement/${i.trophy.value}${
             i.show.checked ? "?show-user-info=true" : ""
