@@ -94,6 +94,9 @@ const share = () => {
             files: filesArray,
             title: i.trophy.label
         });
+    } else {
+        prompt("Sorry, the share button may not work in your browser. Learn more about compatible browsers:",
+               "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share#browser_compatibility");
     }
 }
 sh.addEventListener("click", share);
