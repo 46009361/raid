@@ -8,11 +8,7 @@ On the mobile app for Reddit, when your account earns an achievement, Reddit gen
 
 ## Using the demo link
 
-> [!IMPORTANT]
-> 
-> Because browsers are inconsistent on clearing memory blobs, and some browsers may clear it early, **the last step will immediately open up your device's built-in sharing popup and ask you to share it**. You can save it to a file manager if you don't want to share it now, or exit out of the popup, right-click/hold, and download. Depending on user feedback, I may implement a fix for this in the near future.
-
-1. Enter a valid username into the first box.
+1. Enter a valid username into the first box or try the examples.
 2. Select the name of the achievement you want.
 3. Choose the language.
    * These languages were tested against the "Joined Reddit" achievement, which is the most common one. Some languages are not fully translated and newer achievements may not have been translated at all; these are solely official translations from Reddit.
@@ -34,6 +30,6 @@ And yes, I'm aware that the name "raid" doesn't fit the intended tone of the pro
 * The Google Search result and HackerOne report linked at the top, as well as TestLocally above
 * [Scratch](https://scratch.mit.edu/) for the language list, with the capitalization of the country codes modified to meet the requirements of the browser header.
    * I had to remove many languages that fell back to English, as it wouldn't make sense to include them if they don't work on this project.
-* The [r/Redditachievments wiki](https://www.reddit.com/r/Redditachievments/wiki/records/) for providing me with a list of accounts having the most achievements for me to test on. Without them, this project wouldn't be possible!
-* [Corsfix](https://corsfix.com/docs) for the documentation
+* The [Achievement Leaderboard](https://www.reddit.com/r/Redditachievments/comments/1wmab8t/updated_achievement_leaderboard_21092026/) for providing me with a list of accounts having the most achievements for me to test on. Without them, this project wouldn't be possible!
+* [Nest](https://hackclub.app) for hosting
 * At least one more source that I probably forgot when it came to writing the remaining parts of the code that I didn't already know
