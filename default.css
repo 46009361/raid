@@ -9,3 +9,7 @@ body {
 .hidden {
     display: none;
 }
+
+#earned {
+    width: 100%; /* make it the right size on mobile */
+}
